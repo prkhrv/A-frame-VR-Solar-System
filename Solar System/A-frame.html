@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A-frame</title>
+	<script type="text/javascript" src="script/aframe.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/my.css">
+</head>
+<body>
+	<a-scene>
+		<a-sky src="images/space.jpg"></a-sky>
+		<a-text color="white" value="sun" width="6" position="-2.5 0.25 -3" rotation="0 15 0"></a-text>
+		<!--Sun-->
+	    <a-sphere  position="0 0 0" radius="1.5"  src="images/sun.gif"  rotation="0 90 0">
+			<a-animation attribute="rotation" fill="forwards" dur="100000" easing="linear" repeat="indefinate" to="0 360 1"></a-animation>
+		</a-sphere>
+		<!--mercury-->
+		<a-entity position="0 0 0">
+		<a-sphere  position="3 0 0" radius="0.25" src="images/mercury.jpg">
+		<a-animation attribute="rotation" fill="forwards" dur="15661.36" easing="linear" repeat="indefinate" to="0 360 0"></a-animation></a-sphere>
+		<a-animation attribute="rotation" from="0 0 0" to="0 360 0" easing="linear" dur="10000" repeat="indefinate"></a-animation>
+	    </a-entity>
+	    <!--venus-->
+	    <a-entity position="0 0 0">
+		<a-sphere  position="5 0 0" radius="0.4" src="images/venus.jpg">
+		<a-animation attribute="rotation" fill="forwards" dur="200000" easing="linear" repeat="indefinate" to="0 360 0"></a-animation></a-sphere>
+		<a-animation attribute="rotation" from="0 0 0" to="0 360 0" easing="linear" dur="18455.34" repeat="indefinate"></a-animation>
+	    </a-entity>
+	    <!--Earth-->
+	    <a-entity position="0 0 0">
+	    <a-sphere position="7 0 0" radius="0.5" rotation="0 0 0" src="images/earth.jpg">
+		<a-animation attribute="rotation" fill="forwards" dur="10000" easing="linear" repeat="indefinate" to="0 360 0"></a-animation></a-sphere>
+		<a-animation attribute="rotation" from="0 0 0" to="0 360 0" easing="linear" dur="30000" repeat="indefinate"></a-animation>
+		</a-entity>	
+		<!--Mars-->
+		<a-entity position="0 0 0">
+		<a-sphere  position="9 0 0" radius="0.42" src="images/mars.jpg">
+		<a-animation attribute="rotation" fill="forwards" dur="10500" easing="linear" repeat="indefinate" to="0 360 0"></a-animation></a-sphere>
+		<a-animation attribute="rotation" from="0 0 0" to="0 360 0" easing="linear" dur="56400" repeat="indefinate"></a-animation>
+	    </a-entity>
+	    <!--Jupiter-->
+	    <a-entity position="0 0 0">
+		<a-sphere  position="13 0 0" radius="0.80" src="images/jupiter.jpg">
+		<a-animation attribute="rotation" fill="forwards" dur="4100" easing="linear" repeat="indefinate" to="0 360 0"></a-animation></a-sphere>
+		<a-animation attribute="rotation" from="0 0 0" to="0 360 0" easing="linear" dur="355800" repeat="indefinate"></a-animation>
+	    </a-entity>
+	    <!--Saturn-->
+	    <a-entity position="0 0 0">
+	    <a-sphere  position="15.5 0 0" radius="0.65" src="images/saturn.jpg">
+	    <a-animation attribute="rotation" fill="forwards" dur="4500" easing="linear" repeat="indefinate" to="0 360 0"></a-animation></a-sphere>
+	    <a-entity position="15.5 0 0" from="15.5 0 0">	
+	    <a-animation attribute="rotation" from="0 0 0" to="0 360 0" direction="reverse" easing="linear" dur="883800" repeat="indefinate"></a-animation>	
+		<a-ring position="0 0 0" rotation="-65 0 5"></a-ring>  
+	    </a-entity>
+		<a-animation attribute="rotation" from="0 0 0" to="0 360 0" easing="linear" dur="883800" repeat="indefinate"></a-animation>
+	    </a-entity>
+	    <!--Uranus-->
+	    <a-entity position="0 0 0">
+		<a-sphere  position="17.7 0 0" radius="0.50" src="images/uranus.jpg">
+		<a-animation attribute="rotation" fill="forwards" dur="7200" easing="linear" repeat="indefinate" to="360 0 0"></a-animation></a-sphere>
+		<a-animation attribute="rotation" from="0 0 0" to="0 360 0" easing="linear" dur="2520300" repeat="indefinate"></a-animation>
+	    </a-entity>
+	    <!--Neptune-->
+	    <a-entity position="0 0 0">
+		<a-sphere  position="19.9 0 0" radius="0.55" src="images/neptune.jpg">
+		<a-animation attribute="rotation" fill="forwards" dur="63900" easing="linear" repeat="indefinate" to="0 360 0"></a-animation></a-sphere>
+		<a-animation attribute="rotation" from="0 0 0" to="0 360 0" easing="linear" dur="4943700" repeat="indefinate"></a-animation>
+	    </a-entity>
+		
+
+	</a-scene>
+
+
+
+</body>
+</html>
